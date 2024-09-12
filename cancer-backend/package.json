@@ -1,0 +1,16 @@
+{
+  "name": "cancer-backend",
+  "version": "1.0.0",
+  "description": "Backend for Cancer Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.7",
+    "express": "^4.17.1",
+    "iconv-lite": "^0.6.3",
+    "sqlite3": "^5.0.2"
+  }
+}

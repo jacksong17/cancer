@@ -1,0 +1,54 @@
+:root {
+  --primary: #3A86FF;
+  --secondary: #FF006E;
+  --accent: #FFBE0B;
+  --background: #F8F9FA;
+  --text: #212529;
+  --card-bg: #FFFFFF;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: #2a75e6;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+input, select, textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(58, 134, 255, 0.2);
+  outline: none;
+}

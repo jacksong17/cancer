@@ -1,0 +1,22 @@
+{
+  "name": "cancer-application",
+  "version": "1.0.0",
+  "description": "Cancer Application for Cogito IS",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "node cancer-backend/server.js",
+    "start:frontend": "cd cancer-frontend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.7",
+    "express": "^4.21.0",
+    "sqlite3": "^5.1.7"
+  }
+}
